@@ -1,15 +1,29 @@
 import React from "react";
+import resume from '../../assets/files/Luce_Resume.A.pdf';
+
 
 function Footer(){
+    const links ={
+        linkedIn: 'https://www.linkedin.com/in/caroline-luce-a314b1224/',
+        github: 'https://github.com/Cluce059',
+        stackOverflow: 'https://stackoverflow.com/users/17255139/caroline',
+        resume: resume
+    }
     return (
         <footer>
             <ul className="flex-row">
-                <li href="/"></li>
-                    <span className="mx-2">Github</span>
-                <li href="/"></li>
-                    <span className="mx-2">LinkdIn</span>
-                <li className="mx-2"href="/"></li>
-                    <span className="mx-2">StackOverFlow(make acct I guess)</span>
+                <li>
+                    <a href={links.github} className="mx-2">Github</a>
+                </li>
+                <li >
+                    <a href={links.linkedIn}className="mx-2">LinkedIn</a>
+                </li>
+                <li>
+                    <a href={links.stackOverflow} className="mx-2">StackOverflow</a>
+                </li>
+                <li>
+                    <a href={links.resume}  className="mx-2">Resume</a>
+                </li>
             </ul>
         </footer>
     );

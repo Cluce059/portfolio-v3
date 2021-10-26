@@ -6,31 +6,38 @@ exports[`Footer component matches snapshot 1`] = `
     <ul
       class="flex-row"
     >
-      <li
-        href="/"
-      />
-      <span
-        class="mx-2"
-      >
-        Github
-      </span>
-      <li
-        href="/"
-      />
-      <span
-        class="mx-2"
-      >
-        LinkdIn
-      </span>
-      <li
-        class="mx-2"
-        href="/"
-      />
-      <span
-        class="mx-2"
-      >
-        StackOverFlow(make acct I guess)
-      </span>
+      <li>
+        <a
+          class="mx-2"
+          href="https://github.com/Cluce059"
+        >
+          Github
+        </a>
+      </li>
+      <li>
+        <a
+          class="mx-2"
+          href="https://www.linkedin.com/in/caroline-luce-a314b1224/"
+        >
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a
+          class="mx-2"
+          href="https://stackoverflow.com/users/17255139/caroline"
+        >
+          StackOverflow
+        </a>
+      </li>
+      <li>
+        <a
+          class="mx-2"
+          href="Luce_Resume.A.pdf"
+        >
+          Resume
+        </a>
+      </li>
     </ul>
   </footer>
 </DocumentFragment>
