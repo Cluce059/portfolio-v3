@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import About from './components/About';
 import './App.css';
-import Nav from './components/Nav'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 
@@ -9,11 +9,11 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
   return (
     <div>
-      <Nav
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
+      <Navbar
+      //contactSelected={contactSelected}
+      //setContactSelected={setContactSelected}
+      ></Navbar>
+    {<main className="content">
         {!contactSelected ? (
           <>
           <About></About>
@@ -21,10 +21,20 @@ function App() {
         ) : (
           <ContactForm></ContactForm>
         )}
-      </main>
+        </main>}
         <Footer></Footer>
-    </div>
+        </div>
   );
 }
+
+      /* {<main className="content">
+        {!contactSelected ? (
+          <>
+          <About></About>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
+        </main>} */
 
 export default App;
