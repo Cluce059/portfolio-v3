@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import { FaUser, FaFileAlt, FaProjectDiagram, FaMobileAlt  } from 'react-icons/fa';
+import resume from '../../assets/files/Luce_Resume.A.pdf';
 import './nav.css';
 
 function Nav(props){
@@ -19,13 +21,16 @@ function Nav(props){
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <span data-testid="about" href="#about" onClick={() => setContactSelected(false)}>Bio</span> 
+                        <span data-testid="about" href="#about" onClick={() => setContactSelected(false)}> <FaUser /> Bio</span> 
                     </li>
                     <li className="mx-2">
-                        <span onClick={() => setContactSelected(true)}>Contact</span>
+                        <span onClick={() => setContactSelected(true)}> <FaMobileAlt /> Contact</span>
                     </li>
                     <li className="mx-2">
-                        <span>Portfolio</span>
+                        <span data-testid="portfolio" href="#portfolio"onClick={() => setContactSelected(false)}> <FaProjectDiagram /> Portfolio</span>
+                    </li>
+                    <li className="mx-2">
+                        <a href={resume}onClick={() => setContactSelected(false)}> <FaFileAlt /> Resume</a>
                     </li>
                 </ul>
             </nav>
@@ -35,64 +40,3 @@ function Nav(props){
 
 export default Nav;
 
-
-//import '@trendmicro/react-sidenav/dist/react-sidenav.css';
-//import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
-
-// function Navbar(props){
-//     const { contactSelected, setContactSelected } = props;
-//     const [scrolled, setScrolled] = React.useState(false);
-//     const handleScroll=()=>{
-//         const offset=window.scrollY;
-//         if(offset > 200){
-//             setScrolled(true);
-//         } else {
-//             setScrolled(false);
-//         }
-//     }
-//     useEffect(()=> {
-//         window.addEventListener('scroll',handleScroll)
-//     })
-//     let navbarClasses=['navbar'];
-//     if(scrolled){
-//         navbarClasses.push('scrolled');
-//     }
-//     <Navbar>contactSelected={contactSelected} setContactSelected={setContactSelected}</Navbar>
-//     return (
-// <header className="flex-row px-1">
-//             <h2>
-//                 <a className="mx-2" data-testid="link" href="/">
-//                    Caroline Luce
-//                 </a>
-//             </h2>
-//             <nav className ="navbar">
-//                 <ul className="flex-row">
-//                     <li className="mx-2">
-//                         <span data-testid="about" href="#about" onClick={() => setContactSelected(false)}>Bio</span> 
-//                     </li>
-//                     <li className="mx-2">
-//                         <span onClick={() => setContactSelected(true)}>Contact</span>
-//                     </li>
-//                     <li className="mx-2">
-//                         <span>Portfolio</span>
-//                     </li>
-//                 </ul>
-//             </nav>
-//         </header>
-//     );
-// }
-
-// function Nav(props){
-   
-
-//     <Nav>contactSelected={contactSelected} setContactSelected={setContactSelected}
-//     </Nav>
-//     return (
-
-        
-//         /*would love to implement the sideNav, imported deps above^*/
-        
-//     );
-// }
-
-//export default Navbar;
