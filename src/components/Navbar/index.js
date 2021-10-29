@@ -1,42 +1,64 @@
-import React from 'react';
-import { FaUser, FaFileAlt, FaProjectDiagram, FaMobileAlt  } from 'react-icons/fa';
-import resume from '../../assets/files/Luce_Resume.A.pdf';
+import React, { useState } from 'react';
+import * as FaIcons from 'react-icons/fa';
 import './nav.css';
+import { Link } from 'react-router-dom';
+import { NavbarData } from '../NavbarData';
+import { IconContext } from 'react-icons';
+//^edit icon props
 
-function Nav(props){
-    const { contactSelected, setContactSelected } = props;
+function Navbar(props){
+    //const { contactSelected, setContactSelected } = props;
+    const [sidebar, setSidebar ] = useState(false);
 
-    <Nav>contactSelected={contactSelected} setContactSelected={setContactSelected}</Nav>
+    const showSidebar = () => setSidebar(!sidebar);
+
+    //<Navbar>contactSelected={contactSelected} setContactSelected={setContactSelected}</Navbar>
     return (
-
-        
-        /*{see if it would be better to seperate this nav from header}
-        handle the onClick events l8r*/
-        <header className="flex-row px-1">
-            <h2>
-                <a className="mx-2" data-testid="link" href="/">
-                   Caroline Luce
-                </a>
-            </h2>
-            <nav>
-                <ul className="flex-row">
-                    <li className="mx-2">
-                        <span data-testid="about" href="#about" onClick={() => setContactSelected(false)}> <FaUser /> Bio</span> 
+        <>
+        <IconContext.Provider value={{color: '#fff'}}>
+        <div className="navbar">
+            <Link to='#' className='menu-bars'>
+                <FaIcons.FaBars onClick={showSidebar} />
+                </Link>
+        </div>
+            <nav className={sidebar ? 'nav-menu active': 'nav-menu'}>
+                <ul className="nav-menu-items" onClick={showSidebar}>
+                    <li className="navbar-toggle">
+                    <Link to='#' className='menu-bars'>
+                        <FaIcons.FaRegWindowClose />
+                    </Link>
                     </li>
-                    <li className="mx-2">
-                        <span onClick={() => setContactSelected(true)}> <FaMobileAlt /> Contact</span>
-                    </li>
-                    <li className="mx-2">
-                        <span data-testid="portfolio" href="#portfolio"onClick={() => setContactSelected(false)}> <FaProjectDiagram /> Portfolio</span>
-                    </li>
-                    <li className="mx-2">
-                        <a href={resume}onClick={() => setContactSelected(false)}> <FaFileAlt /> Resume</a>
-                    </li>
+                {NavbarData.map((item, index) => {
+                    return (
+                        <li 
+                            key={index}
+                            className={item.className}>
+                            <Link to={item.path}>
+                                    {item.icon}
+                                <span>{item.title}</span>
+                            </Link>
+                        </li>
+                    );
+                })}
                 </ul>
             </nav>
-        </header>
+            </IconContext.Provider>
+            </>
     );
 }
 
-export default Nav;
+export default Navbar;
 
+/**
+                    <li className="navbar-toggle mx-2">
+                        <span data-testid="about" href="#about" onClick={() => setContactSelected(false)}> <FaIcons.FaUser /> Bio</span> 
+                    </li>
+                    <li className="navbar-toggle">
+                        <span onClick={() => setContactSelected(true)}> <FaIcons.FaMobileAlt /> Contact</span>
+                    </li>
+                    <li className="navbar-toggle">
+                        <span data-testid="portfolio" href="#portfolio"onClick={() => setContactSelected(false)}> <FaIcons.FaProjectDiagram /> Portfolio</span>
+                    </li>
+                    <li className="navbar-toggle">
+                        <a href={resume}onClick={() => setContactSelected(false)}> <FaIcons.FaFileAlt /> Resume</a>
+                    </li> */

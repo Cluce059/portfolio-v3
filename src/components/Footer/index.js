@@ -1,7 +1,7 @@
 import React from "react";
 import resume from '../../assets/files/Luce_Resume.A.pdf';
-import { FaFileAlt, FaGitAlt, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
-
+//import { FaFileAlt, FaGitAlt, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
+import * as FaIcons from 'react-icons/fa';
 
 function Footer(){
     const links ={
@@ -14,16 +14,16 @@ function Footer(){
         <footer>
             <ul className="flex-row">
                 <li>
-                    <a href={links.github} className="mx-2"> <FaGitAlt /> Github</a>
+                    <a href={links.github} className="mx-2"> <FaIcons.FaGitAlt /> Github</a>
                 </li>
                 <li >
-                    <a href={links.linkedIn}className="mx-2"> <FaLinkedin /> LinkedIn</a>
+                    <a href={links.linkedIn}className="mx-2"> <FaIcons.FaLinkedin /> LinkedIn</a>
                 </li>
                 <li>
-                    <a href={links.stackOverflow} className="mx-2"> <FaStackOverflow /> StackOverflow</a>
+                    <a href={links.stackOverflow} className="mx-2"> <FaIcons.FaStackOverflow /> StackOverflow</a>
                 </li>
                 <li>
-                    <a href={links.resume}  className="mx-2"> <FaFileAlt /> Resume</a>
+                    <a href={links.resume}  className="mx-2"> <FaIcons.FaFileAlt /> Resume</a>
                 </li>
             </ul>
         </footer>

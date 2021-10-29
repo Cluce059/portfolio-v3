@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ProjectList =() => {
     //leave open bc use will initialize 
@@ -61,7 +61,7 @@ const ProjectList =() => {
                 {project.name}
                
                 <img 
-                src={require(`../../assets/img/${project.i}.png`).default}
+                src={require(`../assets/img/${project.i}.png`).default}
                 alt={project.alt}
                 key={project.name}
                 ></img>

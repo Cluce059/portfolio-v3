@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 
 /*see ohsnap for eg*/
 
@@ -31,7 +31,7 @@ function ContactForm(){
     }
 
     return (
-        <section>
+        <section className='contact'>
             <h1>Get in Touch</h1>
             <form id="contact-form" onSubmit={submitHandler}>
                 <div>

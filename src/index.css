@@ -22,6 +22,15 @@ main {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Bio, .Contact, .Resume, .Portfolio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
 
 html,

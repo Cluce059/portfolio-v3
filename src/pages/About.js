@@ -1,5 +1,5 @@
 import React from 'react';
-import pfp from '../../assets/img/pfp.jpg';
+import pfp from '../assets/img/pfp.jpg';
 
 function About(){
     return (
