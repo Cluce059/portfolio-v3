@@ -1,5 +1,5 @@
 import React from "react";
-import resume from '../../assets/files/Luce_Resume.A.pdf';
+import resume from '../../assets/files/Luce-resume.C.pdf';
 //import { FaFileAlt, FaGitAlt, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
 import * as FaIcons from 'react-icons/fa';
 

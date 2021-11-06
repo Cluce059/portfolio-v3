@@ -7,12 +7,9 @@ import { IconContext } from 'react-icons';
 //^edit icon props
 
 function Navbar(props){
-    //const { contactSelected, setContactSelected } = props;
     const [sidebar, setSidebar ] = useState(false);
-
     const showSidebar = () => setSidebar(!sidebar);
-
-    //<Navbar>contactSelected={contactSelected} setContactSelected={setContactSelected}</Navbar>
+    
     return (
         <>
         <IconContext.Provider value={{color: '#fff'}}>
@@ -33,10 +30,8 @@ function Navbar(props){
                         <li 
                             key={index}
                             className={item.className}>
-                            <Link to={item.path}>
-                                    {item.icon}
-                                <span>{item.title}</span>
-                            </Link>
+                            {item.icon}
+                            <span href = {item.id}>{item.title}</span>
                         </li>
                     );
                 })}
@@ -49,16 +44,5 @@ function Navbar(props){
 
 export default Navbar;
 
-/**
-                    <li className="navbar-toggle mx-2">
-                        <span data-testid="about" href="#about" onClick={() => setContactSelected(false)}> <FaIcons.FaUser /> Bio</span> 
-                    </li>
-                    <li className="navbar-toggle">
-                        <span onClick={() => setContactSelected(true)}> <FaIcons.FaMobileAlt /> Contact</span>
-                    </li>
-                    <li className="navbar-toggle">
-                        <span data-testid="portfolio" href="#portfolio"onClick={() => setContactSelected(false)}> <FaIcons.FaProjectDiagram /> Portfolio</span>
-                    </li>
-                    <li className="navbar-toggle">
-                        <a href={resume}onClick={() => setContactSelected(false)}> <FaIcons.FaFileAlt /> Resume</a>
-                    </li> */
+
+
