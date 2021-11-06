@@ -12,7 +12,7 @@ function About(){
             <div className="flex-row">
             <h2 class="section-title">Background</h2>
             </div>
-                <p>Hello! My name is Caroline and I am excited to share with you my background and experience. I graduated from the University of Central Florida last May with a bachelor's degree in Environmental Studies and a certificate in Geographic Information Systems. I have many endeavors from making glass art in my spare time to continuing my education in computer science. After a busy day, I like to take time off to play games and have coffee on my porch with my cat. Reach out via phone or email if you have any questions or just want to say hey!</p>
+               
             <div className="flex-row">
             <h2 class="section-title">Education</h2>
             </div>
