@@ -10,7 +10,11 @@ const Card = (project) => {
 	<div class="card-list">
 	<article class="card">
 	<figure class="card-image">
-		<img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85" alt="An orange painted blue, cut in half laying on a blue background" />
+		<img 
+		       src={require(`../../assets/img/${project.project.img}.png`).default}
+		   alt={project.project.alt}
+		   key={project.project.name} 
+		   />
 	</figure>
 	<div class="card-header">
 		<a href={project.project.link}>{project.project.name}</a>

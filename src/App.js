@@ -1,35 +1,34 @@
 import React, {useState} from 'react';
-import About from './pages/About';
+import About from './components/About';
 import './App.css';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
+import Home from './pages/Home';
 import ContactForm from './pages/Contact';
-//import Portfolio from './pages/Portoflio';
-//import Cards from './components/Cards';
-import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  //const [contactSelected, setContactSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(false);
   return (
     <div>
-      {/* link to close navbar must be in router? */}
       <Router>
       <Navbar
       //contactSelected={contactSelected}
       //setContactSelected={setContactSelected}
       ></Navbar>
       <Switch>
-        <Route path='/' exact component={About}/>
+        <Route exact path='/' />
         <Route path='/contact' exact component={ContactForm}/>
       </Switch>
       </Router>
       <About />
-      <Portfolio />
+      <Projects />
         <Footer></Footer>
         </div>
   );
-}
+};
 
       /*   {<main className="content">
         {!contactSelected ? (

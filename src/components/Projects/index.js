@@ -1,13 +1,14 @@
 import React from 'react';
 import Card from '../Card';
 
-function Portfolio(){
+function Projects(){
     //console.log(projects.img);
     const projects = [
         {  
             name: 'Fitness Buddy',
             description: 'Fitness Application',
-            img: '../../assets/img/0.png',
+            // img: '../../assets/img/0.png',
+            img: '0',
             alt: 'Fitness Buddy app',
             repo: 'https://github.com/Cluce059/Fitness-Buddy',
             link: 'https://fitness-buddy-2.herokuapp.com/'
@@ -15,7 +16,7 @@ function Portfolio(){
         {
             name: 'Portfolio-v1',
             description: 'my first portfolio',
-            img: '../../assets/img/1.png',
+            img: '1',
             alt: 'My first portfolio app',
             repo: 'https://github.com/Cluce059/Portofolio',
             link: 'https://cluce059.github.io/Portofolio/'
@@ -23,7 +24,7 @@ function Portfolio(){
         {
             name: 'Trivia Brews',
             description: 'Trivia and beer game app',
-            img: '../../assets/img/2.png',
+            img: '2',
             alt: 'Trivia brews app',
             repo: 'https://github.com/Cluce059/TriviaBrews',
             link: 'https://cluce059.github.io/Project1/'
@@ -31,7 +32,7 @@ function Portfolio(){
         {
             name: 'Food Festival',
             description: 'Food festival app for finding tickets and events (placeholder)',
-            img: '../../assets/img/3.png',
+            img: '3',
             alt: 'Food Festival app',
             repo: 'https://github.com/Cluce059/food-festival',
             link: 'https://cluce059.github.io/food-festival/'
@@ -39,7 +40,7 @@ function Portfolio(){
         {
             name: 'Weather App',
             description: 'Application for tracking local weather location api',
-            img: '../../assets/img/4.png',
+            img: '4',
             alt: 'weather tracking app',
             repo: 'https://github.com/Cluce059/weatherApp',
             link: 'https://cluce059.github.io/weatherApp/'
@@ -47,7 +48,7 @@ function Portfolio(){
         {
             name: 'Portfolio v2',
             description: 'My second portfolio',
-            img: '../../assets/img/5.png',
+            img: '5',
             alt: 'app',
             repo: 'https://github.com/Cluce059/portfolio',
             link: '/'
@@ -59,8 +60,8 @@ function Portfolio(){
    
     return (
         <section className="portfolio-section" id="portfolio">
-            <div className="flex-row">
-            <h2>My Portoflio</h2>
+            <div className="flex-row row">
+            <h2>Caroline Luce</h2>
             </div>
             {projects.map((project) => (
                 <Card project ={project} />
@@ -69,7 +70,7 @@ function Portfolio(){
     );
 };
 
-export default Portfolio;
+export default Projects;
 
 
 //pages 

@@ -5,30 +5,30 @@ import resume from '../../assets/files/Luce-resume.C.pdf';
 export const NavbarData = [
     {
         title: 'About',
-        //path: '/',
+        path: '/',
         icon: <FaIcons.FaUser/>,
         className: 'nav-text',
-        id: '#about'
+        id: '/about'
     },
     {
         title: 'Portfolio',
-        //path: '/',
+        path: '/',
         icon: <FaIcons.FaProjectDiagram />,
         className: 'nav-text',
-        id: '#portfolio'
+        id: '/portfolio'
     },
     {
         title: 'Contact',
-        //path: '/',
+        path: '/',
         icon: <FaIcons.FaMobileAlt />,
         className: 'nav-text',
-        id: '#contact'
+        id: '/contact'
     },
     {
         title: 'Resume',
-        //path: resume,
+        path: resume,
         icon: <FaIcons.FaFileAlt />,
         className: 'nav-text',
-        id: '#resume'
+        id: '/resume'
     }
 ];

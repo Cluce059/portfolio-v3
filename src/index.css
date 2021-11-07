@@ -7,6 +7,7 @@ main {
   --primary: #623caf;
   --secondary: #32385D;
   --tertiary: #0f0533;
+  --gradient: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); 
   --light: #fafafa;
   --dark: #0f0a11;
   --darker: #0a0a0a;
@@ -64,22 +65,16 @@ h1 {
   font-size: 8vw;
 }
 
-.pfp-div{
+ .pfp-div{
   display: flex;
-  --borderWidth: 3px;
   justify-content: center;
   align-items: center;
-  position: relative;
-  border-radius: var(--borderWidth);
-  height: 100%;
-}
+} 
 
 .pfp-div img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 225px;
-    width: 210px;
 }
 
 figcaption{
@@ -87,7 +82,7 @@ figcaption{
   font-size: 1.25rem;
 }
 
-#box{
+/* #box{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,24 +91,7 @@ figcaption{
   color: white;
   font-family: 'Raleway';
   font-size: 2.5rem;
-}
-
-.pfp-div:after{
-  content: '';
-  position: absolute;
-  top: calc(6.5 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(85% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #eea9df, #e367e7, #ba62d4, #553d94, #260e52, #4e0e4e, #a1388b, #88253a);
-  
-
-  border-top: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 15s ease alternate infinite;
-  background-size: 300% 300%;
-  border-radius: 2rem;
-}
+} */
 
 .resume-section{
   border-top: 2px solid;
@@ -127,7 +105,7 @@ body {
 
 body {
   display: block;
-  background: var(--dark);
+  background: var(--gradient);
   color: var(--light);
   font-size: 18px;
   letter-spacing: .1em;
@@ -188,11 +166,13 @@ button[disabled] {
 }
 
 img {
-  max-width: 100%;
+  max-width: 15%;
 }
 
 .pfp{
-  border-radius: 25rem;
+  clip-path: circle(50% at 50% 50%);
+    border: solid #000;
+    border-radius: 100%;
 }
 
 input {
@@ -295,6 +275,14 @@ textarea {
 
 .flex-row {
   display: flex;
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -22px;
+  margin-left: -22px;
 }
 
 .space-between {

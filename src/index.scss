@@ -18,9 +18,13 @@ body {
 	color: #393232;
 }
 
+.pfp-img {
+	max-width: 15%;
+	display: block;
+}
+
 img {
 	max-width: 100%;
-	display: block;
 }
 
 .card-list {
@@ -38,7 +42,7 @@ img {
 	transition: .15s ease-in;
 	
 	&:hover, &:focus-within {
-		box-shadow: 0 0 0 2px #16C79A, 0 10px 60px 0 rgba(#000, .1);
+		box-shadow: 0 0 0 2px #08021a, 0 10px 60px 0 rgba(#000, .1);
 			transform: translatey(-5px);
 	}
 }
