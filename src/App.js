@@ -10,7 +10,7 @@ import Projects from './components/Projects';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+ 
   return (
     <div>
       <Router>
@@ -19,12 +19,11 @@ function App() {
       //setContactSelected={setContactSelected}
       ></Navbar>
       <Switch>
-        <Route exact path='/' />
+        <Route path='/' exact component={Home}/>
         <Route path='/contact' exact component={ContactForm}/>
       </Switch>
       </Router>
-      <About />
-      <Projects />
+     
         <Footer></Footer>
         </div>
   );
