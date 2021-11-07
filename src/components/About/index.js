@@ -4,12 +4,10 @@ import pfp from '../../assets/img/pfp.jpg';
 function About(){
     
     return (
-        <section id="about" className="pfp-div">
-        
-            <div className="pfp-div" id="box">
+        <section id="about">
+            <div className="pfp-div">
                 <img className="pfp-img" src = {pfp}   alt="my profile pic" className="pfp"/>
             </div>
-            
         </section>
     );
 }

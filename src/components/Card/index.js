@@ -10,8 +10,8 @@ const Card = (project) => {
 	<div class="card-list">
 	<article class="card">
 	<figure class="card-image">
-		<img 
-		       src={require(`../../assets/img/${project.project.img}.png`).default}
+		<img className="card-img"
+		   src={require(`../../assets/img/${project.project.img}.png`).default}
 		   alt={project.project.alt}
 		   key={project.project.name} 
 		   />

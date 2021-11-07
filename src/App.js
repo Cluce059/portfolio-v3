@@ -13,17 +13,19 @@ function App() {
  
   return (
     <div>
-      <Router>
+      {/* <Router> */}
       <Navbar
       //contactSelected={contactSelected}
       //setContactSelected={setContactSelected}
       ></Navbar>
-      <Switch>
+      {/* <Switch>
         <Route path='/' exact component={Home}/>
         <Route path='/contact' exact component={ContactForm}/>
       </Switch>
-      </Router>
-     
+      </Router> */}
+      <About />
+      <Projects />
+      <Contact />
         <Footer></Footer>
         </div>
   );

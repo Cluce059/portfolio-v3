@@ -2,10 +2,83 @@ import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import './nav.css';
 import { Link } from 'react-router-dom';
-import { NavbarData } from '../NavbarData';
-import { IconContext } from 'react-icons';
-//^edit icon props
 
+import { IconContext } from 'react-icons';
+
+class Navbar extends React.Component {
+    state = {
+      menuToggle: false
+    }
+
+  render() {
+    return (
+        <>
+      <nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <div class="logo">
+      <a href="#home"><i class="fas fa-chess-knight"></i> Caroline Luce </a>
+    </div>
+
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+</div>
+
+<div class="overlay-menu">
+  <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+</>
+    )
+    }
+  }
+
+
+
+
+export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** 
 function Navbar(props){
     const [sidebar, setSidebar ] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
@@ -27,11 +100,11 @@ function Navbar(props){
                     </li>
                 {NavbarData.map((item, index) => {
                     return (
-                        <li 
+                        <li href = {item.id}
                             key={index}
                             className={item.className}>
                             {item.icon}
-                            <span href = {item.id}>{item.title}</span>
+                            <span>{item.title}</span>
                         </li>
                     );
                 })}
@@ -43,6 +116,7 @@ function Navbar(props){
 }
 
 export default Navbar;
+*/
 
 
 

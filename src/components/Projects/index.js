@@ -60,9 +60,7 @@ function Projects(){
    
     return (
         <section className="portfolio-section" id="portfolio">
-            <div className="flex-row row">
-            <h2>Caroline Luce</h2>
-            </div>
+            <div className="flex-row row"></div>
             {projects.map((project) => (
                 <Card project ={project} />
             ))}
