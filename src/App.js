@@ -25,7 +25,7 @@ function App() {
       </Router> */}
       <About />
       <Projects />
-      <Contact />
+      <Contact href ="#contact"/>
         <Footer></Footer>
         </div>
   );

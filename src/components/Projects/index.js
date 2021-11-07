@@ -6,34 +6,34 @@ function Projects(){
     const projects = [
         {  
             name: 'Fitness Buddy',
-            description: 'Fitness Application',
+            description: 'A Fitness Application for personalized workout plans',
             // img: '../../assets/img/0.png',
             img: '0',
-            alt: 'Fitness Buddy app',
+            alt: 'Fitness Buddy',
             repo: 'https://github.com/Cluce059/Fitness-Buddy',
             link: 'https://fitness-buddy-2.herokuapp.com/'
         },
         {
-            name: 'Portfolio-v1',
-            description: 'my first portfolio',
+            name: 'Portfolio v1',
+            description: 'My first portfolio uilt using static HTML and JavaScript',
             img: '1',
-            alt: 'My first portfolio app',
+            alt: 'My first portfolio',
             repo: 'https://github.com/Cluce059/Portofolio',
             link: 'https://cluce059.github.io/Portofolio/'
         },
         {
             name: 'Trivia Brews',
-            description: 'Trivia and beer game app',
+            description: 'A trivi game with brewery proximity feature',
             img: '2',
-            alt: 'Trivia brews app',
+            alt: 'Trivia Brews',
             repo: 'https://github.com/Cluce059/TriviaBrews',
             link: 'https://cluce059.github.io/Project1/'
         },
         {
             name: 'Food Festival',
-            description: 'Food festival app for finding tickets and events (placeholder)',
+            description: 'Food festival app for finding tickets and events',
             img: '3',
-            alt: 'Food Festival app',
+            alt: 'Food Festival',
             repo: 'https://github.com/Cluce059/food-festival',
             link: 'https://cluce059.github.io/food-festival/'
         },
@@ -49,7 +49,7 @@ function Projects(){
             name: 'Portfolio v2',
             description: 'My second portfolio',
             img: '5',
-            alt: 'app',
+            alt: 'Portfolio-v2',
             repo: 'https://github.com/Cluce059/portfolio',
             link: '/'
         } 
@@ -60,10 +60,13 @@ function Projects(){
    
     return (
         <section className="portfolio-section" id="portfolio">
-            <div className="flex-row row"></div>
+
+          <div>
+          <div className="flex-row">Projects</div>
             {projects.map((project) => (
                 <Card project ={project} />
             ))}
+            </div>
         </section>
     );
 };

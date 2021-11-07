@@ -3,16 +3,20 @@ main {
 	max-width: 90%;
   padding: 50px 30px;
 }
+
 :root {
   --primary: #623caf;
   --secondary: #32385D;
   --tertiary: #0f0533;
-  --gradient: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); 
+  --gradient: linear-gradient(90deg, #8cd6c8 0%, #9FACE6 100%);
+  
+  --revGradient:linear-gradient(119deg, #74EBD5 0%, #9FACE6 100%);
+  
+  
   --light: #fafafa;
   --dark: #0f0a11;
   --darker: #0a0a0a;
   --error: rgb(228, 46, 1);
-  /*v nice spacing consts here*/
   --spacing-one: calc(2.5rem * 1.5);
   --spacing-two: calc(3rem);
   --spacing-five: calc(1rem);
@@ -28,12 +32,17 @@ main {
 .project-icon{
   font-size: 25px; 
   text-decoration: none;
-  /*transition: all .2s ease-in-out; /*duration prop*/
 }
 
-.about {
-    display: block;
+#about {
+    display: flex;
     margin: 5px;
+    background: var(--gradient);
+}
+
+.about-div{
+  margin: 5rem;
+  align-items: center;
 }
 
 h1 {
@@ -107,7 +116,7 @@ body {
 
 body {
   display: block;
-  background: var(--gradient);
+  background: var(--gradient); 
   color: var(--light);
   font-size: 18px;
   letter-spacing: .1em;
@@ -148,9 +157,10 @@ header a {
 
 button {
   font-size: 1rem;
+  color: var(--light);
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: .25rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -173,8 +183,6 @@ button[disabled] {
 
 .pfp{
   clip-path: circle(50% at 50% 50%);
-    border: solid #000;
-    border-radius: 100%;
 }
 
 input {
@@ -277,6 +285,8 @@ textarea {
 
 .flex-row {
   display: flex;
+  align-items: center;
+  border-right: 2px black solid;
 }
 
 .row {
@@ -343,7 +353,10 @@ a {
 .portfolio-section{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
+  background: var(--revGradient);
+  padding: 6rem 6rem;
 }
 
 .projects {

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import './nav.css';
 import { Link } from 'react-router-dom';
-
 import { IconContext } from 'react-icons';
 
 class Navbar extends React.Component {
