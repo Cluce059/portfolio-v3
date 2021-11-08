@@ -26,7 +26,7 @@
   :exclamation: 
   Explore the app
   ## URL
-http://cluce059.github.io/Portfolio-v3
+http://cluce059.github.io/portfolio
   ## Questions
   :alien: See my contact section!<br />
   <br />

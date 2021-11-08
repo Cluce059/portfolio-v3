@@ -60,13 +60,17 @@ function Projects(){
    
     return (
         <section className="portfolio-section" id="portfolio">
-
-          <div>
-          <div className="flex-row">Projects</div>
+          <div  className="flex-row">
+              <h2>Projects</h2>
+          </div>
+          <div className="flex-row">
+              <div className="card-div">
             {projects.map((project) => (
                 <Card project ={project} />
             ))}
             </div>
+            </div>
+    
         </section>
     );
 };

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import * as FaIcons from 'react-icons/fa';
+import React from 'react';
+//import * as FaIcons from 'react-icons/fa'; { useState }
 import './nav.css';
-import { Link } from 'react-router-dom';
-import { IconContext } from 'react-icons';
+//import { Link } from 'react-router-dom';
+//import { IconContext } from 'react-icons';
 
 class Navbar extends React.Component {
     state = {

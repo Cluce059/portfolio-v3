@@ -178,7 +178,7 @@ button[disabled] {
 }
 
  img {
-  max-width: 15%;
+  max-width: 10rem;
 } 
 
 .pfp{
@@ -286,8 +286,11 @@ textarea {
 .flex-row {
   display: flex;
   align-items: center;
-  border-right: 2px black solid;
+  padding: 2rem;
+  border-bottom: 2px black solid;
+  margin: 2rem;
 }
+
 
 .row {
   display: flex;
@@ -412,6 +415,10 @@ a {
   text-decoration: none;
 }
 
+#contact{
+  align-items: center;
+  padding-left: 15rem;
+}
 
 /*======================================================
                           Navbar

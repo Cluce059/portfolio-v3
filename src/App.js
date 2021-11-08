@@ -1,13 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
+//, {useState}
 import About from './components/About';
 import './App.css';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import ContactForm from './pages/Contact';
+//import Home from './pages/Home';
+//import ContactForm from './pages/Contact';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
  
