@@ -6,7 +6,7 @@ function About(){
     return (
         <section id="about">
             <div className="pfp-div">
-                <img className="pfp-img" src = {pfp}   alt="my profile pic" className="pfp"/>
+                <img className="pfp-img" src = {pfp}   alt="my profile pic" />
             </div>
             <div className="about-div">
                 <p>Boot Camp Sudent || Web Development || UCF Graduate || Environmental Science || Geostatistical Analysis</p>
