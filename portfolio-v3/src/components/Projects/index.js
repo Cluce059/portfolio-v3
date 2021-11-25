@@ -38,6 +38,14 @@ function Projects(){
             link: 'https://cluce059.github.io/food-festival/'
         },
         {
+            name: 'News Distillery',
+            description: '',
+            i: '6',
+            alt: 'News',
+            repo: 'https://github.com/Cluce059/fitness-buddy-v2',
+            link: 'https://news-distillery.herokuapp.com/'
+        },
+        {
             name: 'Weather App',
             description: 'Application for tracking local weather location api',
             img: '4',
