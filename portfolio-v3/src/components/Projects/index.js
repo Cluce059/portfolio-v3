@@ -38,29 +38,21 @@ function Projects(){
             link: 'https://cluce059.github.io/food-festival/'
         },
         {
-            name: 'News Distillery',
-            description: '',
-            i: '6',
-            alt: 'News',
-            repo: 'https://github.com/Cluce059/fitness-buddy-v2',
-            link: 'https://news-distillery.herokuapp.com/'
-        },
-        {
-            name: 'Weather App',
-            description: 'Application for tracking local weather location api',
-            img: '4',
-            alt: 'weather tracking app',
-            repo: 'https://github.com/Cluce059/weatherApp',
-            link: 'https://cluce059.github.io/weatherApp/'
-        },
-        {
             name: 'Portfolio v2',
             description: 'My second portfolio',
             img: '5',
             alt: 'Portfolio-v2',
             repo: 'https://github.com/Cluce059/portfolio',
             link: '/'
-        } 
+        },
+        {
+            name: 'News Distillery',
+            description: '',
+            img: '6',
+            alt: 'News',
+            repo: 'https://github.com/Cluce059/fitness-buddy-v2',
+            link: 'https://news-distillery.herokuapp.com/'
+        }
         ];
     //  for(var i = 0; i < projects.length; i++){
     //      console.log(projects[i].name)
